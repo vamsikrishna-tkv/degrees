@@ -97,7 +97,7 @@ def shortest_path(source, target):
     #Initialize frontier
     start=Node(state=source, parent=None, action=None)
     print (start.state)
-    frontier = StackFrontier()
+    frontier = QueueFrontier()
     frontier.add(start)
     print (frontier)
     print ("Initial End")
